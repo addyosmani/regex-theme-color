@@ -1,0 +1,36 @@
+{
+  "name": "regex-theme-color",
+  "version": "0.1.0",
+  "description": "Regex for checking HTML has a valid theme-color meta tag",
+  "homepage": "http://addyosmani.com",
+  "author": {
+    "name": "Addy Osmani",
+    "email": "addyosmani@gmail.com",
+    "url": "addyosmani.com"
+  },
+  "repository": "addyosmani/regex-theme-color",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "regex-theme-color",
+    "theme",
+    "color",
+    "meta"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
