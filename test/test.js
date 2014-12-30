@@ -12,9 +12,16 @@ describe('regex-theme-color node module', function () {
 		done();
 	});
 
+	it('should match a theme-color regardless of order in string', function (done) {
+		assert.equal(themeColorRegex().test('<meta content="#3372DF" name="theme-color">'), true);
+		assert.equal(themeColorRegex().test('<meta 			content="#3372DF"         name="theme-color">'), true);
+		done();
+	});
+
 	it('should fail if a theme-color is not included in the meta tag', function (done) {
 		assert.equal(themeColorRegex().test('<meta name="">'), false);
 		assert.equal(themeColorRegex().test('<meta content>'), false);
+		assert.equal(themeColorRegex().test('<meta content="">'), false);
 		done();
 	});
 	
