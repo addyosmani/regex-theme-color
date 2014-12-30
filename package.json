@@ -1,6 +1,6 @@
 {
   "name": "regex-theme-color",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Regex for checking HTML has a valid theme-color meta tag",
   "homepage": "http://addyosmani.com",
   "author": {
